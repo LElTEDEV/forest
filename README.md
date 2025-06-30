@@ -2,6 +2,8 @@
 
 Este projeto é uma landing page responsiva para o "Forest", um conceito de refúgio e hotel na floresta. O principal objetivo do seu desenvolvimento foi a aplicação prática e o aprofundamento no framework **Tailwind CSS**, explorando suas funcionalidades para criar uma interface moderna, rica em detalhes e totalmente adaptável a diferentes dispositivos.
 
+![Forest Preview](./forest.png)
+
 ## ✨ Foco do Projeto
 
 O desenvolvimento foi centrado em utilizar o Tailwind CSS para construir um layout complexo e responsivo do zero. A ênfase foi em:
