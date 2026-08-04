@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
@@ -455,7 +455,7 @@
 
     <section
       id="contato"
-      class="container mb-12 sm:mb-16 grid lg:grid-cols-2 gap-8"
+      class="container mb-12 grid gap-10 sm:mb-16 lg:grid-cols-2 lg:gap-12"
     >
       <div>
         <h1 class="font-serif text-4xl text-verde-300 mb-4">Nossos Contatos</h1>
@@ -488,58 +488,63 @@
       </div>
 
       <form
-        class="grid gap-4 rounded-xl bg-verde-900 shadow-2xl p-4 lg:p-8"
+        class="grid gap-5 rounded-xl bg-verde-900 p-5 shadow-2xl sm:p-6 lg:p-8"
         action=""
       >
         <div class="flex flex-col">
-          <label class="text-white" for="nome">Nome</label>
+          <label class="mb-2 font-medium text-white" for="nome">Nome</label>
           <input
             id="nome"
             name="nome"
             type="text"
             placeholder="Nome"
-            class="rounded-md border-2 border-verde-800 bg-verde-800 p-2 text-white focus:outline-none focus:ring-2 focus:ring-verde-400 focus:border-verde-900 placeholder:text-verde-900"
+            autocomplete="name"
+            class="min-h-12 rounded-lg border-2 border-verde-700 bg-verde-800 px-4 py-3 text-base text-white caret-verde-300 placeholder:text-gray-300 focus:border-verde-400 focus:outline-none focus:ring-2 focus:ring-verde-400/40"
           />
         </div>
 
-        <div class="grid gap-4 sm:grid-cols-2">
+        <div class="grid gap-5 sm:grid-cols-2">
           <div class="flex flex-col">
-            <label class="text-white" for="email">Email</label>
+            <label class="mb-2 font-medium text-white" for="email">Email</label>
             <input
               id="email"
               name="email"
               type="email"
               placeholder="E-mail"
-              class="rounded-md border-2 border-verde-800 bg-verde-800 p-2 text-white focus:outline-none focus:ring-2 focus:ring-verde-400 focus:border-verde-900 placeholder:text-verde-900"
+              autocomplete="email"
+              inputmode="email"
+              class="min-h-12 rounded-lg border-2 border-verde-700 bg-verde-800 px-4 py-3 text-base text-white caret-verde-300 placeholder:text-gray-300 focus:border-verde-400 focus:outline-none focus:ring-2 focus:ring-verde-400/40"
             />
           </div>
 
           <div class="flex flex-col">
-            <label class="text-white" for="telefone">Telefone</label>
+            <label class="mb-2 font-medium text-white" for="telefone">Telefone</label>
             <input
               id="telefone"
               name="telefone"
-              type="text"
+              type="tel"
               placeholder="(00) 00000-0000"
-              class="rounded-md border-2 border-verde-800 bg-verde-800 p-2 text-white focus:outline-none focus:ring-2 focus:ring-verde-400 focus:border-verde-900 placeholder:text-verde-900"
+              autocomplete="tel"
+              inputmode="tel"
+              class="min-h-12 rounded-lg border-2 border-verde-700 bg-verde-800 px-4 py-3 text-base text-white caret-verde-300 placeholder:text-gray-300 focus:border-verde-400 focus:outline-none focus:ring-2 focus:ring-verde-400/40"
             />
           </div>
         </div>
 
         <div class="flex flex-col">
-          <label class="text-white" for="menssagem">Menssagem</label>
+          <label class="mb-2 font-medium text-white" for="mensagem">Mensagem</label>
           <textarea
-            id="menssagem"
-            name="menssagem"
+            id="mensagem"
+            name="mensagem"
             rows="5"
-            type="text"
             placeholder="Descreva aqui a sua dúvida"
-            class="rounded-md border-2 border-verde-800 bg-verde-800 p-2 text-white focus:outline-none focus:ring-2 focus:ring-verde-400 focus:border-verde-900 placeholder:text-verde-900 resize-none"
+            class="rounded-lg border-2 border-verde-700 bg-verde-800 px-4 py-3 text-base text-white caret-verde-300 placeholder:text-gray-300 focus:border-verde-400 focus:outline-none focus:ring-2 focus:ring-verde-400/40 resize-none"
           ></textarea>
         </div>
 
         <button
-          class="bg-verde-400 text-verde-900 py-2 px-4 inline-block rounded-full place-self-start hover:bg-verde-300 transition-colors ease-out"
+          type="submit"
+          class="min-h-12 w-full rounded-full bg-verde-400 px-6 py-3 font-medium text-verde-950 transition-colors ease-out hover:bg-verde-300 focus:outline-none focus:ring-2 focus:ring-verde-300 focus:ring-offset-2 focus:ring-offset-verde-900 sm:w-auto sm:place-self-start"
         >
           Enviar Email
         </button>
@@ -604,7 +609,14 @@
 
         <ul class="flex gap-8">
           <li><a class="hover:text-verde-300" href="#">Instagram</a></li>
-          <li><a class="hover:text-verde-300" target="_blank" href="https://www.linkedin.com/in/igur-matioli">LinkedIn</a></li>
+          <li>
+            <a
+              class="hover:text-verde-300"
+              target="_blank"
+              href="https://www.linkedin.com/in/igur-matioli"
+              >LinkedIn</a
+            >
+          </li>
           <li><a class="hover:text-verde-300" href="#">Facebook</a></li>
         </ul>
       </div>
